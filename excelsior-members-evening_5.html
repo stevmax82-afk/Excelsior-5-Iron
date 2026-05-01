@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -140,6 +141,15 @@ footer p{font-size:11px;color:rgba(255,255,255,0.5)}
 .reveal.on{opacity:1;transform:translateY(0)}
 .d1{transition-delay:0.1s}.d2{transition-delay:0.2s}.d3{transition-delay:0.3s}
 
+.d-item .val + .sub + .val{font-size:20px;opacity:0.85;margin-top:12px}
+
+.sponsors{padding:80px 24px 90px;background:var(--navy-deeper);text-align:center}
+.sponsors-inner{max-width:920px;margin:0 auto;display:flex;justify-content:center}
+.sponsor-card{background:transparent;padding:0;max-width:520px;width:100%;display:flex;flex-direction:column;align-items:center;gap:22px;text-decoration:none;transition:opacity 0.3s ease}
+.sponsor-card:hover{opacity:0.82}
+.sponsor-tier{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:0}
+.sponsor-logo{max-width:100%;width:280px;height:auto;display:block}
+
 @media(max-width:680px){
   .venue-card{grid-template-columns:1fr}
   .venue-card.reverse .venue-img,.venue-card.reverse .venue-info{order:unset}
@@ -147,6 +157,8 @@ footer p{font-size:11px;color:rgba(255,255,255,0.5)}
   .venue-info{padding:32px 24px}
   .details-inner{grid-template-columns:1fr 1fr}
   .form-row{grid-template-columns:1fr}
+  .sponsor-card{padding:34px 28px}
+  .sponsor-logo{width:240px}
 }
 </style>
 </head>
@@ -251,7 +263,17 @@ footer p{font-size:11px;color:rgba(255,255,255,0.5)}
     <div class="d-item reveal"><p class="lbl">When</p><p class="val">Friday 22nd May</p><p class="sub">3:00 PM onwards</p></div>
     <div class="d-item reveal d1"><p class="lbl">First Stop</p><p class="val">Five Iron Golf</p><p class="sub">3:00 PM – 6:00 PM</p></div>
     <div class="d-item reveal d2"><p class="lbl">Second Stop</p><p class="val">Logs &amp; Embers</p><p class="sub">Palm Jumeirah</p></div>
-    <div class="d-item reveal d3"><p class="lbl">Price</p><p class="val">AED 395</p><p class="sub">Five Iron only · Logs &amp; Embers PAYG</p></div>
+    <div class="d-item reveal d3"><p class="lbl">Pricing</p><p class="val">AED 395</p><p class="sub">Alcoholic Package</p><p class="val">AED 275</p><p class="sub">Non-Alcoholic Package</p></div>
+  </div>
+</section>
+
+<section class="sponsors">
+  <div class="s-div"><span></span><i>Proudly Supported By</i><span></span></div>
+  <div class="sponsors-inner">
+    <a class="sponsor-card reveal" href="https://www.rideskipper.com/" target="_blank" rel="noopener">
+      <p class="sponsor-tier">Official Transport Partner</p>
+      <img class="sponsor-logo" src="https://res.cloudinary.com/dcijt90fp/image/upload/v1777626911/Logo_with_Slogan_-_black_2_fekv60.png" alt="Ride Skipper — Skip the Drive, Enjoy the Ride">
+    </a>
   </div>
 </section>
 
@@ -259,7 +281,7 @@ footer p{font-size:11px;color:rgba(255,255,255,0.5)}
   <div class="rsvp-inner">
     <p class="ey reveal">Reserve Your Place</p>
     <h2 class="reveal d1">Secure Your Spot</h2>
-    <p class="rsvp-sub reveal d2">Places are limited and this one will go fast. AED 395 per person covers unlimited drinks, unlimited canapés and unlimited simulator access at Five Iron. After 6pm, the night continues at Logs &amp; Embers at Vista Mare on the Palm — pay as you go with an exceptional happy hour menu waiting for you.</p>
+    <p class="rsvp-sub reveal d2">Places are limited and this one will go fast. The Alcoholic Package at AED 395 covers unlimited drinks, canapés and simulator access at Five Iron — and for those doing a Dry May (or just skipping the booze), the Non-Alcoholic Package is AED 275 with the same canapés, simulators and unlimited soft drinks. After 6pm, the night continues at Logs &amp; Embers at Vista Mare on the Palm — pay as you go with an exceptional happy hour menu waiting for you.</p>
 
     <div class="rsvp-form reveal d3" id="rsvpForm">
       <div class="form-row">
@@ -310,7 +332,7 @@ footer p{font-size:11px;color:rgba(255,255,255,0.5)}
       <h3>You're on the list.</h3>
       <p>We'll be in touch with all the details closer to the date.<br>See you there.</p>
     </div>
-    <p class="rsvp-note">AED 395 per person &nbsp;·&nbsp; Friday 22nd May &nbsp;·&nbsp; Dubai, UAE</p>
+    <p class="rsvp-note">AED 395 alcoholic &nbsp;·&nbsp; AED 275 non-alcoholic &nbsp;·&nbsp; Friday 22nd May &nbsp;·&nbsp; Dubai, UAE</p>
   </div>
 </section>
 
